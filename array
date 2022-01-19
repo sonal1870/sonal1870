@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class IJArraydemo {
+    int arr[]; //instance variable
+    public IJArraydemo()
+    {
+      //create the array
+      arr = new int[5];
+    }
+    public static void main(String[] args) {
+      //  int arr[] = new int[5]; //as a local variable
+        IJArraydemo obj1 = new IJArraydemo();
+        Scanner s = new Scanner(System.in);
+        for (int i = 0; i < obj1.arr.length; i++) {
+            obj1.arr[i] = s.nextInt();
+        }
+        for(int i = 0;i<obj1.arr.length;i++){
+            System.out.println(obj1.arr[i]);
+        }
+    }
